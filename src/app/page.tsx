@@ -1,101 +1,58 @@
 import Image from "next/image";
+import photo from "@/app/assets/image1.jpg";
+import hearth from "@/app/assets/hearth.png";
+import JustTime from "@/components/JustTime";
+import Carroussel from "@/components/Carroussel";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="p-2 flex items-center justify-center">
+      <div className="flex border border-secondary h-full w-full rounded-xl items-center flex-col p-2 gap-4 max-w-xl">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <Carroussel />
+
+        <p className="font-rouge text-6xl text-secondary">Luiza e Paulinho</p>
+
+        <p className="text-textColor">Juntos à</p>
+
+        <JustTime />
+
+        <p className="text-7xl"></p>
+        <Image
+          alt="1"
+          src={hearth}
+          quality={100}
+          width={67}
+          className="rounded-md"
+        />
+        <hr className="border w-40 border-textColor" />
+
+        <div className="flex flex-col gap-4 font-narnoor text-center text-white p-3">
+          <p>
+            Meu amor, hoje é o seu dia, e eu só quero te lembrar o quanto você é
+            incrível e especial para mim. Você tem uma forma única de iluminar
+            minha vida e me fazer sorrir todos os dias.
+          </p>
+
+          <p>
+            Sou muito grato por ter você ao meu lado e por cada momento que
+            passamos juntos. Que esse novo ano seja cheio de sonhos realizados,
+            risadas, amor e tudo o que te faz feliz.
+          </p>
+
+          <p>Te amo demais, e vou continuar celebrando você, hoje e sempre! 💕</p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+        <hr className="border w-40 border-textColor" />
+
+        <Image
+          alt="1"
+          src={hearth}
+          quality={100}
+          width={67}
+          className="rounded-md mb-4"
+        />
+      </div>
     </div>
   );
 }

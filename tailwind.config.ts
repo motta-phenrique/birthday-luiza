@@ -10,7 +10,14 @@ export default {
     extend: {
       colors: {
         background: "var(--background)",
-        foreground: "var(--foreground)",
+        secondary: "var(--secondary)",
+        textColor: "var(--textColor)",
+        terciary: "var(--terciary)",
+      },
+      fontFamily: {
+        rouge: ['"Rouge Script"', 'cursive'], 
+        narnoor: ['"Narnoor"', "sans-serif"],
+        // Nome personalizado
       },
     },
   },
