@@ -3,8 +3,8 @@ import { Rouge_Script, Narnoor } from "next/font/google";
 import "./globals.css";
 
 const rougeScript = Rouge_Script({
-  subsets: ['latin'], 
-  weight: '400',      
+  subsets: ["latin"],
+  weight: "400",
 });
 
 export default function RootLayout({

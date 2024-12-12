@@ -1,19 +1,22 @@
 import Image from "next/image";
-import photo from "@/app/assets/image1.jpg";
 import hearth from "@/app/assets/hearth.png";
 import JustTime from "@/components/JustTime";
 import Carroussel from "@/components/Carroussel";
+import Galery from "@/components/Galery";
+import Music from "@/components/Music";
 
 export default function Home() {
   return (
     <div className="p-2 flex items-center justify-center">
       <div className="flex border border-secondary h-full w-full rounded-xl items-center flex-col p-2 gap-4 max-w-xl">
-
+          <Music />
         <Carroussel />
 
-        <p className="font-rouge text-6xl text-secondary">Luiza e Paulinho</p>
+        <p className="font-rouge text-5xl text-secondary text-center font-bold">
+          Luiza e Paulinho
+        </p>
 
-        <p className="text-textColor">Juntos à</p>
+        <p className="text-textColor font-bold">Juntos à</p>
 
         <JustTime />
 
@@ -40,18 +43,14 @@ export default function Home() {
             risadas, amor e tudo o que te faz feliz.
           </p>
 
-          <p>Te amo demais, e vou continuar celebrando você, hoje e sempre! 💕</p>
+          <p>
+            Te amo demais, e vou continuar celebrando você, hoje e sempre! 💕
+          </p>
         </div>
 
         <hr className="border w-40 border-textColor" />
 
-        <Image
-          alt="1"
-          src={hearth}
-          quality={100}
-          width={67}
-          className="rounded-md mb-4"
-        />
+        <Galery />
       </div>
     </div>
   );
